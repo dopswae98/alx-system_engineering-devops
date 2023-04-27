@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Bash script that displays:
+
+#The content of the current directory
+#In a list format
+#Where only the part of the name after the first dash is displayed (refer to the example)
+
+array=(`ls`)
+
+len=${#array[*]}
+
+i=0
+while [ $i -lt $len ]; do
+value=${array[$i]#*-}
+echo "$value"
+let i++
+done
