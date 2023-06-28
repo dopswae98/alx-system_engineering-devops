@@ -1,1 +1,1 @@
-Learning to use puppet configuration management
+# 0x0A. Configuration management
